@@ -4,7 +4,7 @@ import Logo from '../assets/logo-text.png'
 const Nav = () => {
     return (
         <div className='sticky top-0 z-50 bg-fuchsia-100 py-1.5 px-1'>
-            <div className='flex justify-between items-center max-w-6xl mx-auto mt-1 md:mt-1.5 mb-1'>
+            <div className='flex justify-between items-center max-w-6xl mx-auto mt-1 md:mt-1.5 mb-1 px-3.5'>
 
                 <RxHamburgerMenu className='block md:hidden w-7 h-11' />
 
