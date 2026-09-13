@@ -1,4 +1,4 @@
-import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import FooterLOgo from '../assets/logo-text.png'
 
 const Footer = () => {
@@ -35,12 +35,11 @@ const Footer = () => {
 
                     <li>
                         <a
-                            href="https://web.facebook.com/profile.php?id=61592989884402"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-1.5">
-                            <FaFacebook />
-                            Facebook
+                            href="#"
+                            className="flex items-center gap-1.5"
+                        >
+                            <FaTwitter />
+                            Twitter
                         </a>
                     </li>
                 </ul>

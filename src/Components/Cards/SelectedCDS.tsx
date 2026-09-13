@@ -3,10 +3,12 @@ import type { Icard } from "../Types/Type";
 
 const SelectedCDS = ({ selectedCards, removeFromStack, removeAll }: { selectedCards: Icard[], removeFromStack: (id: string) => void, removeAll: () => void }) => {
     return (
-        <div className="border-2 rounded-2xl mt-3.5 md:mt-11 p-3 mb-3 flex flex-col gap-2.5">
-            <h2 className="font-bold">Your Stack</h2>
-            <p>{selectedCards.length} Technology{selectedCards.length !== 1 ? 's' : ""} Selected</p>
-            <div className="border">
+        <div className="border-2 border-[#D81B7E] rounded-2xl p-3 flex flex-col gap-2.5">
+            <div className="flex flex-col gap-0.5">
+                <h2 className="font-bold">Your Stack</h2>
+                <p>{selectedCards.length} Technology{selectedCards.length !== 1 ? 's' : ""} Selected</p>
+            </div>
+            <div className="border border-gray-400 rounded-md mt-3 p-2 ">
                 {
                     selectedCards.length === 0 ? <p>Your stack is empty</p> : selectedCards.map((card) => (
                         <div key={card.id} className="flex items-center justify-between">

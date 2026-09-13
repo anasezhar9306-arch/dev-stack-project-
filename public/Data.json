@@ -6,7 +6,7 @@
         "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
         "icon": "https://cdn.simpleicons.org/react",
         "rating": 4.9,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Bg-Friendly",
         "badge": "Popular"
     },
     {
@@ -16,7 +16,7 @@
         "description": "An approachable, performant, and versatile framework for building user interfaces.",
         "icon": "https://cdn.simpleicons.org/vuedotjs",
         "rating": 4.8,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Bg-Friendly",
         "badge": "Versatile"
     },
     {
@@ -76,7 +76,7 @@
         "description": "The versatile programming language powering dynamic behavior across the web.",
         "icon": "https://cdn.simpleicons.org/javascript",
         "rating": 4.9,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Bg-Friendly",
         "badge": "Ubiquitous"
     },
     {
@@ -96,7 +96,7 @@
         "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
         "icon": "https://cdn.simpleicons.org/tailwindcss",
         "rating": 4.9,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Bg-Friendly",
         "badge": "Modern"
     },
     {
@@ -116,7 +116,7 @@
         "description": "A development platform for hosting code, collaborating, and managing software projects.",
         "icon": "https://cdn.simpleicons.org/github",
         "rating": 4.9,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Bg-Friendly",
         "badge": "Popular"
     }
 ]
