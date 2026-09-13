@@ -1,6 +1,7 @@
+import type { Icard } from "../Types/Type";
 
 
-const SelectedCDS = () => {
+const SelectedCDS = ({ selectedCards }: { selectedCards: Icard[] }) => {
     return (
         <div className="border-2 rounded-2xl mt-3.5 md:mt-11 p-3 mb-3 flex flex-col gap-2.5">
             <h2 className="font-bold">Your Stack</h2>

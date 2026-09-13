@@ -7,7 +7,7 @@ const Footer = () => {
             {/* Chaild div 1 */}
             <div className="flex flex-col items-center md:items-start">
                 <img src={FooterLOgo} alt="" />
-                <p className='font-light mt-2.5'>Curated tools, technologies, and resources for developers building
+                <p className='font-light mt-2.5 text-center md:text-start'>Curated tools, technologies, and resources for developers building
                     modern software.</p>
                 <ul className='mt-2.5 flex gap-5'>
                     <li>GitHub</li>

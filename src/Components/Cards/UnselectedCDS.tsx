@@ -1,7 +1,7 @@
 import type { Icard } from "../Types/Type";
 
 
-const UnselectedCDS = ({ cards }: { cards: Icard[] }) => {
+const UnselectedCDS = ({ cards, addToStack }: { cards: Icard[], addToStack: (card: Icard) => void }) => {
     return <div className="mt-8 md:mt-11 mb-3.5 grid grid-cols-1 md:grid-cols-3 gap-5">
         {
             cards.map((card) => {
@@ -19,7 +19,9 @@ const UnselectedCDS = ({ cards }: { cards: Icard[] }) => {
 
                     </div>
 
-                    <button className="w-full rounded-md text-[#D81B7E]  hover:text-black font-semibold bg-fuchsia-100 hover:shadow-2xl hover:scale-105 py-1.5">Add to Stack</button>
+                    <button
+                        onClick={() => addToStack(card)}
+                        className="w-full rounded-md text-[#D81B7E]  hover:text-black font-semibold bg-fuchsia-100 hover:shadow-2xl hover:scale-105 py-1.5">Add to Stack</button>
 
                 </div>
             })
