@@ -11,7 +11,9 @@ const Banner = () => {
                 {/* Banner Text */}
                 <div className='flex flex-col gap-y-5 text-center md:text-left'>
                     <h2 className='text-3xl md:text-6xl font-bold md:mb-3'>Build Your Ideal<br />
-                        <span className='bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent leading-tight'>Development Stack</span>
+                        <span className='devstack-gradient bg-clip-text text-transparent leading-tight'>
+                            Development Stack
+                        </span>
                     </h2>
 
                     <p>Explore frontend, backend, database, and tooling options, compare them side by side, and put together the stack that fits your

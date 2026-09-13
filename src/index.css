@@ -1,2 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@utility devstack-gradient {
+    background-image: linear-gradient(
+        to right,
+        #FF5722,
+        #D81B7E,
+        #7C3AED
+    );
+}

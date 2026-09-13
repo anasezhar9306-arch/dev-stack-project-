@@ -1,3 +1,4 @@
+import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 import FooterLOgo from '../assets/logo-text.png'
 
 const Footer = () => {
@@ -10,9 +11,38 @@ const Footer = () => {
                 <p className='font-light mt-2.5 text-center md:text-start'>Curated tools, technologies, and resources for developers building
                     modern software.</p>
                 <ul className='mt-2.5 flex gap-5'>
-                    <li>GitHub</li>
-                    <li>Twitter</li>
-                    <li>Linkedin</li>
+                    <li>
+                        <a
+                            href="https://github.com/anasezhar9306-arch"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-1.5">
+                            <FaGithub />
+                            GitHub
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/anas-izhar-33a8ab423/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-1.5">
+                            <FaLinkedin />
+                            LinkedIn
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://web.facebook.com/profile.php?id=61592989884402"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-1.5">
+                            <FaFacebook />
+                            Facebook
+                        </a>
+                    </li>
                 </ul>
             </div>
             {/* Chaild div 2 */}

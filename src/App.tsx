@@ -1,4 +1,6 @@
 import { Suspense } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Banner from "./Components/Banner"
 import Cards from "./Components/Cards/Cards"
 import Nav from "./Components/Nav"
@@ -18,12 +20,18 @@ function App() {
 
   return (
     <>
+      <ToastContainer />
       <Nav />
       <Banner />
 
-      <Suspense fallback={<h2>Loading...</h2>}>
+      <Suspense fallback={
+        <div className="flex justify-center items-center py-20">
+          <div className="w-10 h-10 border-4 border-fuchsia-200 border-t-[#D81B7E] rounded-full animate-spin"></div>
+        </div>
+      }>
         <Cards cardsPromise={cardsPromise} />
       </Suspense>
+
       <Footer />
       <div className="divider max-w-6xl mx-auto px-4"></div>
 

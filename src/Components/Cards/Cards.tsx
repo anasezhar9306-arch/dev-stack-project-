@@ -2,6 +2,7 @@ import { use, useState } from "react";
 import SelectedCDS from "./SelectedCDS";
 import UnselectedCDS from "./UnselectedCDS";
 import type { Icard } from "../Types/Type";
+import { toast } from "react-toastify";
 
 interface CardsProps {
     cardsPromise: Promise<Icard[]>
@@ -15,15 +16,34 @@ const Cards = ({ cardsPromise }: CardsProps) => {
     const [selectedCards, setSelectedCards] = useState<Icard[]>([])
 
     const addToStack = (card: Icard) => {
-        setSelectedCards([...selectedCards, card])
+        const alreadySelected = selectedCards.some(
+            (selectedCard) => selectedCard.id === card.id
+        );
+        if (alreadySelected) {
+            toast.warning(`${card.name} is already in your stack!`);
+            return;
+        }
+
+        setSelectedCards([...selectedCards, card]);
+        toast.success(`${card.name} added to your stack!`);
     }
 
     const removeFromStack = (id: string) => {
-        setSelectedCards(selectedCards.filter((card) => card.id !== id))
+
+        const removedCard = selectedCards.find((card) => card.id === id);
+        setSelectedCards(selectedCards.filter((card) => card.id !== id));
+        if (removedCard) {
+            toast.info(`${removedCard.name} removed from your stack!`);
+        }
     }
 
     const removeAll = () => {
-        setSelectedCards([])
+
+        if (selectedCards.length === 0) {
+            return;
+        }
+        setSelectedCards([]);
+        toast.info("All technologies removed from your stack!");
     };
 
     return (

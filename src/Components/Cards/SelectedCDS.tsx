@@ -5,7 +5,7 @@ const SelectedCDS = ({ selectedCards, removeFromStack, removeAll }: { selectedCa
     return (
         <div className="border-2 rounded-2xl mt-3.5 md:mt-11 p-3 mb-3 flex flex-col gap-2.5">
             <h2 className="font-bold">Your Stack</h2>
-            <p>Technology Selected</p>
+            <p>{selectedCards.length} Technology{selectedCards.length !== 1 ? 's' : ""} Selected</p>
             <div className="border">
                 {
                     selectedCards.length === 0 ? <p>Your stack is empty</p> : selectedCards.map((card) => (
