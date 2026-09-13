@@ -18,6 +18,14 @@ const Cards = ({ cardsPromise }: CardsProps) => {
         setSelectedCards([...selectedCards, card])
     }
 
+    const removeFromStack = (id: string) => {
+        setSelectedCards(selectedCards.filter((card) => card.id !== id))
+    }
+
+    const removeAll = () => {
+        setSelectedCards([])
+    };
+
     return (
         <div className="px-4 max-w-6xl mx-auto mt-5 md:mt-7 ">
             <div className="text-center md:text-start">
@@ -28,7 +36,10 @@ const Cards = ({ cardsPromise }: CardsProps) => {
                 <UnselectedCDS
                     cards={cards}
                     addToStack={addToStack} />
-                <SelectedCDS selectedCards={selectedCards} />
+                <SelectedCDS
+                    selectedCards={selectedCards}
+                    removeFromStack={removeFromStack}
+                    removeAll={removeAll} />
             </div>
         </div>
     );
