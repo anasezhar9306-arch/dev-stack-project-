@@ -35,7 +35,8 @@ const Cards = ({ cardsPromise }: CardsProps) => {
             <div className="flex flex-col md:flex-row gap-5">
                 <UnselectedCDS
                     cards={cards}
-                    addToStack={addToStack} />
+                    addToStack={addToStack}
+                    selectedCards={selectedCards} />
                 <SelectedCDS
                     selectedCards={selectedCards}
                     removeFromStack={removeFromStack}
